@@ -1,4 +1,4 @@
-package br.com.fit.ApplicationOrder.ApplicationOrder.controller;
+package br.com.fit.ApplicationOrder.controller;
 
 import java.util.List;
 
@@ -15,10 +15,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.com.fit.ApplicationOrder.ApplicationOrder.dto.ItemPedido;
-import br.com.fit.ApplicationOrder.ApplicationOrder.dto.PedidoRequest;
-import br.com.fit.ApplicationOrder.ApplicationOrder.dto.PedidoResponse;
-import br.com.fit.ApplicationOrder.ApplicationOrder.service.PedidoService;
+import br.com.fit.ApplicationOrder.dto.ItemPedido;
+import br.com.fit.ApplicationOrder.dto.PedidoRequest;
+import br.com.fit.ApplicationOrder.dto.PedidoResponse;
+import br.com.fit.ApplicationOrder.service.PedidoService;
 import jakarta.validation.ConstraintViolationException;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;

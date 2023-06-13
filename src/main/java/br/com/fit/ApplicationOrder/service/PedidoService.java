@@ -1,4 +1,4 @@
-package br.com.fit.ApplicationOrder.ApplicationOrder.service;
+package br.com.fit.ApplicationOrder.service;
 
 import java.util.List;
 import java.util.Objects;
@@ -9,14 +9,14 @@ import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
 
-import br.com.fit.ApplicationOrder.ApplicationOrder.dto.ItemPedido;
-import br.com.fit.ApplicationOrder.ApplicationOrder.dto.PedidoRequest;
-import br.com.fit.ApplicationOrder.ApplicationOrder.dto.PedidoResponse;
-import br.com.fit.ApplicationOrder.ApplicationOrder.entity.ItemPedidoEntity;
-import br.com.fit.ApplicationOrder.ApplicationOrder.entity.PedidoEntity;
-import br.com.fit.ApplicationOrder.ApplicationOrder.mapper.PedidoPersistenceMapper;
-import br.com.fit.ApplicationOrder.ApplicationOrder.repository.ItemPedidoRepository;
-import br.com.fit.ApplicationOrder.ApplicationOrder.repository.PedidoRepository;
+import br.com.fit.ApplicationOrder.dto.ItemPedido;
+import br.com.fit.ApplicationOrder.dto.PedidoRequest;
+import br.com.fit.ApplicationOrder.dto.PedidoResponse;
+import br.com.fit.ApplicationOrder.entity.ItemPedidoEntity;
+import br.com.fit.ApplicationOrder.entity.PedidoEntity;
+import br.com.fit.ApplicationOrder.mapper.PedidoPersistenceMapper;
+import br.com.fit.ApplicationOrder.repository.ItemPedidoRepository;
+import br.com.fit.ApplicationOrder.repository.PedidoRepository;
 import lombok.RequiredArgsConstructor;
 
 @Service

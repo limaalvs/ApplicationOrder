@@ -1,15 +1,13 @@
-package br.com.fit.ApplicationOrder.ApplicationOrder.entity;
+package br.com.fit.ApplicationOrder.entity;
 
 import java.util.List;
+import java.util.UUID;
 
-import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -21,19 +19,28 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder()
-@Table(name = "TBL_ORDER")
-public class PedidoEntity {
-	
+@Table(name = "TBL_ITEM_ORDER")
+public class ItemPedidoEntity {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	@Column(name="ID")
+	@Column(name = "ID")
 	private Long id; 
 	
-	@OneToMany(cascade = CascadeType.ALL)
-	@JoinColumn(name = "fk_order_id")
-	private List<ItemPedidoEntity> itemPedido; 
+	@Column(name = "NUMBER")
+	private Long numero; 
 	
-	@Column(name = "CLIENT")
-	private String cliente; 
+	@Column(name = "INDEX")
+	private Integer indice;
+	
+	@Column(name = "SKU")
+	private String sku;
+	
+	@Column(name = "PRODUCT")
+	private String produto;
+	
+	@Column(name = "PRICE")
+	private Double preco; 
+	
+	@Column(name = "AMOUNT")
+	private Integer quantidade; 
 }
-

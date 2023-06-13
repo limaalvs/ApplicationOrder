@@ -1,14 +1,14 @@
-package br.com.fit.ApplicationOrder.ApplicationOrder.mapper;
+package br.com.fit.ApplicationOrder.mapper;
 
-import br.com.fit.ApplicationOrder.ApplicationOrder.dto.ItemPedido;
-import br.com.fit.ApplicationOrder.ApplicationOrder.dto.ItemPedido.ItemPedidoBuilder;
-import br.com.fit.ApplicationOrder.ApplicationOrder.dto.PedidoRequest;
-import br.com.fit.ApplicationOrder.ApplicationOrder.dto.PedidoResponse;
-import br.com.fit.ApplicationOrder.ApplicationOrder.dto.PedidoResponse.PedidoResponseBuilder;
-import br.com.fit.ApplicationOrder.ApplicationOrder.entity.ItemPedidoEntity;
-import br.com.fit.ApplicationOrder.ApplicationOrder.entity.ItemPedidoEntity.ItemPedidoEntityBuilder;
-import br.com.fit.ApplicationOrder.ApplicationOrder.entity.PedidoEntity;
-import br.com.fit.ApplicationOrder.ApplicationOrder.entity.PedidoEntity.PedidoEntityBuilder;
+import br.com.fit.ApplicationOrder.dto.ItemPedido;
+import br.com.fit.ApplicationOrder.dto.ItemPedido.ItemPedidoBuilder;
+import br.com.fit.ApplicationOrder.dto.PedidoRequest;
+import br.com.fit.ApplicationOrder.dto.PedidoResponse;
+import br.com.fit.ApplicationOrder.dto.PedidoResponse.PedidoResponseBuilder;
+import br.com.fit.ApplicationOrder.entity.ItemPedidoEntity;
+import br.com.fit.ApplicationOrder.entity.ItemPedidoEntity.ItemPedidoEntityBuilder;
+import br.com.fit.ApplicationOrder.entity.PedidoEntity;
+import br.com.fit.ApplicationOrder.entity.PedidoEntity.PedidoEntityBuilder;
 import java.util.ArrayList;
 import java.util.List;
 import javax.annotation.processing.Generated;

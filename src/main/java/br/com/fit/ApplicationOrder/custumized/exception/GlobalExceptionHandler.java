@@ -1,4 +1,4 @@
-package br.com.fit.ApplicationOrder.ApplicationOrder.custumized.exception;
+package br.com.fit.ApplicationOrder.custumized.exception;
 
 import java.util.HashMap;
 import java.util.List;

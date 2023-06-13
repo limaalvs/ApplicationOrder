@@ -1,4 +1,4 @@
-package br.com.fit.ApplicationOrder.ApplicationOrder.dto;
+package br.com.fit.ApplicationOrder.dto;
 
 import java.util.List;
 
