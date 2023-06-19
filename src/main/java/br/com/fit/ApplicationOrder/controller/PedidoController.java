@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -83,6 +84,12 @@ public class PedidoController {
 	@ResponseStatus(HttpStatus.BAD_REQUEST)
 	ResponseEntity<String> handleConstraintValidatioException(ConstraintViolationException ex) {
 		return new ResponseEntity<>("Error: "+ ex.getMessage(), HttpStatus.BAD_REQUEST);
+	}
+	
+	@DeleteMapping("/{numero}")
+	public ResponseEntity<Void> deletePedidoById(@PathVariable("numero") @Min(value = 1, message = "Numero deve ser maior que 0") Long numero) {
+		service.deleteById(numero);
+		return new ResponseEntity<>(HttpStatus.OK);
 	}
 	
 }

@@ -17,6 +17,7 @@ import br.com.fit.ApplicationOrder.entity.PedidoEntity;
 import br.com.fit.ApplicationOrder.mapper.PedidoPersistenceMapper;
 import br.com.fit.ApplicationOrder.repository.ItemPedidoRepository;
 import br.com.fit.ApplicationOrder.repository.PedidoRepository;
+import jakarta.validation.constraints.Min;
 import lombok.RequiredArgsConstructor;
 
 @Service
@@ -90,6 +91,10 @@ public class PedidoService {
 			throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Produto nao encontrado no banco de dados");
 		}
 		
+	}
+
+	public void deleteById(Long numero) {
+		repository.deleteById(numero);
 	}
 
 }
